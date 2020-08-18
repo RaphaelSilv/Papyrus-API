@@ -5,14 +5,11 @@ using Microsoft.Extensions.Logging;
 namespace Papyrus_API.Controllers
 {
     [ApiController]
-    [Route("[controller]")]
+    [Route("api/BookNote")]
     public class BookNoteController : ControllerBase
     {
-        private readonly ILogger<BookNoteController> _logger;
-
-        public BookNoteController(ILogger<BookNoteController> logger)
+        public BookNoteController()
         {
-            _logger = logger;
         }
     }
 }
